@@ -1,0 +1,88 @@
+@import  (less) '../css/reset.css';
+@import  (less) '../css/fonts.css';
+@import 'variables.less';
+@import 'mixins.less';
+
+
+@import 'blocks/scaffolding.less';
+@import 'blocks/buttons.less';
+@import  (less) '../css/hamburger.css';
+@import  (less) '../css/fotorama.css';
+@import  (less) '../libs/owl.carousel.2.1.0/assets/owl.carousel.css';
+@import  (less) '../libs/owl.carousel.2.1.0/assets/owl.theme.default.min.css';
+@import 'blocks/main-header.less';
+@import 'blocks/promo.less';
+@import 'blocks/main-gallery.less';
+@import 'blocks/reviews.less';
+@import 'blocks/promotions.less';
+@import 'blocks/route-to-office.less';
+@import 'blocks/accommodation.less';
+@import 'blocks/page-footer.less';
+@import 'blocks/room-page.less';
+@import 'mixins.less';
+ 
+
+html {
+  min-height: 100%;
+  font-family: sans-serif;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+body {
+ .font-base ();
+  color: @gray-darkest;
+  background: @body-bg;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  min-height: 100vh;  
+}
+
+.wrapper {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  box-sizing: border-box;
+  flex: 1; 
+  align-items:center;
+}
+
+a {
+    color: @decor-color;
+    &:hover {
+      color:@decor-color-darken;
+    }
+} 
+img {
+    border: none;
+}
+input {
+    vertical-align: middle;
+}
+
+h1 {
+  .font-h1 ();
+  margin: 18px 0 37px 0;
+}
+h2{
+  .font-h2 ();
+}
+h3{
+  .font-h3 ();
+
+}
+
+.group:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+
+
+
+

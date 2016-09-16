@@ -1,0 +1,71 @@
+ @@include('_include/header.html')
+      <div class="booking-descr">
+        <h1 class="booking-descr__title">Бронирование</h1>
+        <p class="booking-descr_text">Чтобы забронированить номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+7812775588"></a></p>
+      </div>
+
+      <div class="form-wrapper">
+        <form action="" id="booking">
+          <div class="booking-step booking-step--period">
+            <div class="booking-step_number">Шаг 1</div>
+            <div class="booking-step_title">Дата отыха</div>
+            <div class="fields-container">
+              <div class="fields-container__item">
+                <label class="fields-container__comment" >Дата въезда</label>
+                <div class="dates-picker" id="dates-picker__date-from">
+                  <input type="text" name="day-from">
+                  <input type="text" name="month-from">
+                  <input type="text" name="year-from">
+                </div>
+              </div>
+              <div class="fields-container__item">
+               <label for="date-to" class="fields-container__comment">Дата выезда</label>
+                <div class="dates-picker" id="dates-picker__date-to">
+                  <input type="text" name="day-to">
+                  <input type="text" name="month-to">
+                  <input type="text" name="year-to">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="booking-step booking-step--bildings">
+            <div class="booking-step_number">Шаг 2</div>
+            <div class="booking-step_title">Место проживания</div>
+            <div class="fields-container">
+              <div class="fields-container__item">
+                <label class="fields-container__comment" >Отель</label>
+                <input type="radio" name="bildings" id="booking-hotel" class="booking-radio booking-radio--hotel">
+              </div>
+              <div class="fields-container__item">
+                <label class="fields-container__comment" >Коттедж</label>
+                <input type="radio" name="bildings" id="booking-cottage" class="booking-radio booking-radio--cottage" >
+              </div>
+             </div>
+          </div>
+          <div class="booking-step booking-step--rooms">
+            <div class="booking-step_number">Шаг 3</div>
+            <div class="booking-step_title">Тип коттеджа</div>
+        
+              <div class="fields-container">
+                <div class="fields-container__item fields-container__item--checkmark">
+                  <label class="fields-container__comment" >Флагман</label>
+                  <input type="radio" name="">
+                </div>
+                <div class="fields-container__item fields-container__item--checkmark">
+                  <label class="fields-container__comment" >Озерный</label>
+                </div>
+                <div class="fields-container__item fields-container__item--checkmark">
+                  <label class="fields-container__comment" >Ольховка</label>
+                </div>
+                <div class="fields-container__item fields-container__item--checkmark">
+                  <label class="fields-container__comment" >Портовый</label>
+                </div>
+              </div>
+              <div class="room-descr">
+               <div class="room-descr__item"></div>
+              </div>
+          </div>
+        </form>
+      </div>
+    
+ @@include('_include/footer.html')

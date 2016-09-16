@@ -1,0 +1,14 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-contnt: space-between;
+  align-items: center;
+  width: 725;
+  height: 133px;
+}
+.page-footer__address {
+  display: none;
+}
+.page-footer__contacts_data {
+  display: none;
+}

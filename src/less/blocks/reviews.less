@@ -1,0 +1,86 @@
+//reviews
+
+.reviews {
+  background: url(../img/reviews_bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-wrap: wrap; 
+
+  &__wrap {
+        padding-bottom: 50px;
+    @media @screen-l {
+      width: 1200px;
+      padding:5px 0 50px; 
+    }
+  }
+  &__slider { 
+    margin-bottom: 41px;
+    @media @screen-l {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__title{
+    color:#fff;
+    padding: 40px 12.5% 41px;
+    text-align: center;
+    width: 100%;
+    @media @screen-l {
+      padding: 37px 5.2% 18px;
+      width: 1200px;
+    }
+  }
+  &__item {
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #fff;
+    padding-bottom:  22px;
+    margin-bottom: 55px;
+    @media @screen-m {
+        width: 480px;
+    }
+  }
+  &__foto {
+    position: relative;
+    top:-24px;
+    box-sizing: content-box;
+    border: 2px solid #fff;
+    width: 78px;
+    height: 78px;
+    margin-bottom: -9px;
+  }
+  &__name {
+    width: 100%;
+    text-align: center;
+    .font-small();
+    font-weight: bold;
+  }
+  &__social {
+    width: 22px;
+    height: 17px;
+    margin-top: 8px;
+    &--vk {
+        background: url(../img/review_vk.png) 0 2px no-repeat; 
+    }
+    &--fb {
+        background: url(../img/review_fb.png) 2px 0 no-repeat; 
+    }
+  }
+  &__text {
+    padding: 10px 40px 16px;
+    text-align: center;
+  }
+  &__date {
+    .font-small();
+    text-align: center;
+  }
+  &__more-btn {
+    text-align: center;
+  }
+}

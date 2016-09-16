@@ -1,0 +1,132 @@
+.caption {
+  background: url(/img/rooms-top-banner_768.jpg) center center no-repeat;
+  text-align: center;
+  color:#fff;
+  width: 100%;
+  height: 200px;
+  padding: 0 12.5%;
+    @media @screen-m {
+     background: url(/img/rooms-top-banner_1199.jpg) center center no-repeat;
+     height: 200px;
+    }
+    @media @screen-l {
+     background: url(/img/rooms-top-banner_2000.jpg) center center no-repeat;
+     height: 198px;
+    }
+  &__title{
+    font: normal 30px/35px 'PTSerif-Caption', Helvetica, Arial, sans-serif;
+    margin-top: 52px;
+    @media @screen-l {
+    margin-top: 44px 0 32px 0;
+    }
+
+    @media @screen-l {
+    margin-top: 42px 0 20px 0;
+    }
+  }
+
+  &__text {
+    display: none;
+    @media @screen-m {
+    display: inline;
+    }
+    @media @screen-l {
+    }
+  }
+}
+
+.content__title {
+    font: normal 30px/35px 'PTSerif-Caption', Helvetica, Arial, sans-serif;
+}
+
+.room-types {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media @screen-m {
+    padding:0  2.6% 39px;
+  }
+
+  @media @screen-l {
+    padding:0  10px 39px;
+    width: 1160px;
+  }
+
+  &__info {
+    width: 100%;
+    background: @gray-lightest;
+    margin-bottom: 40px;
+    border: 1px solid @gray-light;
+    padding: 36px 0 34px 0;
+
+      @media @screen-m {
+        padding:40px  9.63% 39px;
+      }
+      @media @screen-l {
+        display: flex;
+        flex-wrap:wrap;
+        position: relative;
+        padding: 36px 50px 0 0;
+        padding-right: 50%;
+        justify-content:center;
+        height: 307px;
+      }
+  }
+
+  &__name{
+    font: normal 26px/30px 'pt_serifregular', Helvetica, Arial, sans-serif;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+
+  &__price{
+    text-align: center;
+    font: 14px/24px 'FiraSans Medium', Helvetica, Arial, sans-serif;
+    b {
+        color: #ff7435;
+    }
+  }
+
+  &__item-header {
+    padding: 0 12.5% 20px;
+    @media @screen-l {
+      
+    }
+  }
+
+
+  &__preview{
+      @media @screen-l {
+        position: absolute;
+        top: 0;
+        left: 580px;
+        width: 580px;
+        height: 305px;
+      }
+  }
+  &__button {
+    padding-top: 34px;
+    text-align: center;
+      @media @screen-l {
+        padding-top: 32px;
+        padding-top: 54px;
+      }
+  }
+
+  &__item-footer {
+    padding:37px  12.5% 0;
+      @media @screen-m {
+        padding:40px  13% 39px;
+      }
+      @media @screen-l {
+        padding:8px  13% 39px;
+      }
+  }
+}
+
+.small-screen-br {
+  @media @screen-m {
+    display: none;
+  }
+}

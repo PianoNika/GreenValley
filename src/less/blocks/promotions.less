@@ -1,0 +1,62 @@
+//promotions-and-offers
+.promotions {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-bottom: 45px;
+  flex-wrap: wrap; 
+  &__title {
+    padding:40px 12.5% 0;
+    text-align: center;
+    @media @screen-m {
+      padding: 40px 5.2% 0 ;
+    }
+    @media @screen-l {
+      padding: 40px 0  0;
+      width: 1180px;
+    }
+  }
+  &__slider {
+    margin-top: 32px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    @media @screen-l {
+      width: 1180px;
+    }
+  }
+  &__note {
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.95);;
+    width: 257px;
+    padding: 20px;
+    bottom:23px;
+    @media @screen-l {
+      width: 313px;
+      bottom:20px;
+    }
+  }
+  &__note-title {
+   font: normal 18px/22px 'FiraSans Medium', Helvetica, Arial, sans-serif;
+   text-transform: uppercase;;
+   color: @decor-color;
+    @media @screen-l {
+      font-size: 14px;
+    }
+  }
+  &_note-text _{
+    line-height: 20px;
+    margin-top: 2px;
+    @media @screen-l {
+      margin-top: 3px;
+    }
+  }
+}
+
+#owl-promotions__slider {
+    width: 100%; 
+    @media @screen-l { 
+        width: 1200px;
+    }
+}
